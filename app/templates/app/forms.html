@@ -1,0 +1,27 @@
+
+{% extends 'app/base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Task</title>
+</head>
+
+<body>
+  <div class="header">
+    <div>
+        <a href="{% url 'home' %}">&#x2190; Home</a>
+        <h1>Hello {{ request.user|title }}</h1>
+        <h3>Create a task</h3>
+    </div>
+  </div>
+  
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Create">
+  </form>
+</body>
+</html>
+{% endblock %}

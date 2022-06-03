@@ -1,0 +1,100 @@
+body {
+	background-color: #e9ebf5;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 150px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+{
+	color: whitesmoke;
+	font-family: 'Raleway', sans-serif;
+}
+
+form {
+	padding: 10px;
+}
+
+form a:hover {
+	color: #088efc;
+}
+
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	color: black;
+	border-radius: 5px 5px 0px 0px;
+	padding: 10px;
+	background: rgb(229,247,98);
+	background: linear-gradient(90deg, rgba(229,247,98,0.9275910193178833) 0%, rgba(9,200,34,0.21890754592852768) 35%, rgba(0,151,255,1) 100%); 
+}
+
+.header a:hover {
+	text-decoration: none;
+	color: #088efc;
+}
+
+.card-container {
+	max-width: 550px;
+	margin: auto;
+	background-color: #f5fcfa;
+	border-radius: 5px;
+}
+
+.search-add-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 5px;
+}
+
+
+.add-icon {
+	color: green;
+	margin-right: 15px;
+}
+
+.task-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	align-items: center;
+	text-decoration: none;
+}
+
+
+.task-icon-complete {
+  height: 25px;
+  width: 25px;
+  background-color: #10fc08;
+  border-radius: 50%;
+}
+
+.task-icon-incomplete {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.task-item-complete {
+	margin-right: 250px;
+}
+
+.task-item-incomplete {
+	margin-right: 250px;
+}
+
+
+.delete-link {
+	text-decoration: none;
+	color: red;
+	padding-right: 10px;
+}

@@ -1,0 +1,20 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<html>
+    <head>
+        <title>Logout</title>
+        
+    </head>
+
+    <body>
+        <form method="POST">{% csrf_token %}
+              
+         {{ form.as_p }} 
+          <p>Are you sure you want to log out, {{ request.user }}?</p>
+
+          <input type="submit" value="Logout">
+        </form>
+    </body>
+
+</html>
+{% endblock %}

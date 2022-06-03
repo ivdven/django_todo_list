@@ -1,0 +1,17 @@
+{% extends 'app/base.html' %}
+{% block content %}
+
+<div class="header">
+    <div>
+        <a href="{% url 'home' %}">&#x2190; Home</a>
+        <h1>Hello {{ request.user|title }}</h1>
+    </div>
+</div>
+
+<form method="post">{% csrf_token %}
+    <p>Are you sure you want to delete "{{ task }}"?</p>
+    {{ form }}
+    <input type="submit" value="Delete">
+</form>
+{% endblock %}
+
